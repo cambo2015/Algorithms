@@ -1,4 +1,4 @@
-def bubbleSort(l):#->void
+def bubbleSort(l):#->list int
     sorted = False
     while not sorted:
         sorted = True
