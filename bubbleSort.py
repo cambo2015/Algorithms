@@ -3,8 +3,6 @@ def bubbleSort(l):#->void
     while not sorted:
         sorted = True
         for i in range(len(l)-1):
-            a = l[i]
-            b = l[i+1]
             if l[i] > l[i+1] :
                 temp = l[i]
                 l[i] = l[i+1]
