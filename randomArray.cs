@@ -17,7 +17,7 @@ namespace Dcoder
 	
 	public static class Algorithms
 	{
-		public static List<int> CreateArray(int max = 10)
+		public static List<int> RandomArray(int max = 10)
 		{
 			Random r = new Random();
 			var l = new List<int>();
