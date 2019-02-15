@@ -9,7 +9,7 @@ namespace Dcoder
 	{
 		public static void Main(string[] args)
 		{
-			List<int> l = CreateArray(10);
+			List<int> l = RandomArray(10);
 			foreach(var n in l)
 				Write(n);
 		}
