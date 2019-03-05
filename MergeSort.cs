@@ -57,6 +57,8 @@ namespace Dcoder
     			
     		CopyArray(arr,helper);//this is better than above
     		
+    		
+    		//next part is used to do the sorting
     		int left = low;
     		int curr = low;
     		int right = middle +1;
