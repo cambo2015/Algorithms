@@ -9,10 +9,7 @@ public class Program
         {
             Console.WriteLine(item);
         }
-        /*foreach(var a in Algorithms.Merge2OrderArrays(new int[] { 1, 3, 7 }, new int[] { 0, 9 }))
-        {
-            Console.WriteLine(a);
-        }*/
+      
 
     }
 }
@@ -48,6 +45,9 @@ public static class Algorithms
         return Merge2OrderArrays(sortedArr2, sortedArr3);
     }
 
+    ///<summary>
+    ///Merges two unsorted arrays and sorts them
+    ///</summary>
     public static int[] Merge2OrderArrays(int[] arr1, int[] arr2)
     {
         int len = arr1.Length + arr2.Length;
