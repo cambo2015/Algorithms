@@ -4,6 +4,7 @@
 //the specified index is the day
 //animals[obj[index].day] = obj[index]
 
+
 var animals = new Array(30)
 let obj = [
 {
@@ -22,20 +23,23 @@ let obj = [
 	day:12
 }
 ]
-const indexCopy=(arr,index)=>{
+
+const halve=(arr,index,resultFunc)=>{
+	
 	if(arr[index]===undefined)return;
 	if(arr.length ===1){
-		animals[arr[index].day-1] = arr[index]
+		resultFunc(arr,index)
 		return;
 	}
-	let halfWayThough = Math.ceil(arr.length / 2)
-	let arrayFirstHalf = arr.slice(0, halfWayThough);
-	let arraySecondHalf = arr.slice(halfWayThough, arr.length);
+	let halfArr = Math.ceil(arr.length / 2)
+	let arrFirstHalf = arr.slice(0, halfArr);
+	let arrSecondHalf = arr.slice(halfArr, arr.length);
 	
-	indexCopy(arrayFirstHalf,arrayFirstHalf.length-1)
-	indexCopy(arraySecondHalf,arraySecondHalf.length-1)
-	
+	halve(arrFirstHalf,arrFirstHalf.length-1,resultFunc)
+	halve(arrSecondHalf,arrSecondHalf.length-1,resultFunc)
 }
 
-indexCopy(obj,obj.length-1)
+halve(obj,obj.length-1,(arr,index)=>{
+	animals[arr[index].day-1] = arr[index]
+})
 console.log(animals)
