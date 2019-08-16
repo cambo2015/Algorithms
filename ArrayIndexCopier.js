@@ -1,3 +1,8 @@
+//a fun algorithm I made.
+//Needed something fast to copy 
+//database array into another array at
+//a specified index.
+
 //copies the obj arr data into
 //the animals array at a specified
 // index.
