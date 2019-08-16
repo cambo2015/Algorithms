@@ -1,4 +1,8 @@
-
+//copies the obj arr data into
+//the animals array at a specified
+// index.
+//the specified index is the day
+//animals[obj[index].day] = obj[index]
 
 var animals = new Array(30)
 let obj = [
@@ -21,7 +25,6 @@ let obj = [
 const indexCopy=(arr,index)=>{
 	if(arr[index]===undefined)return;
 	if(arr.length ===1){
-		console.log("item:"+ arr[index])
 		animals[arr[index].day-1] = arr[index]
 		return;
 	}
